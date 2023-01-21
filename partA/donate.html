@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Preserving the Wild</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo1.jpg">
+  
+  <style>
+    #header {
+    border: 5px dotted black;
+    width: 99.5%;
+    position: sticky;
+    top: 0;
+    height: 22% ;
+    padding-right: 3%;
+    background-color: black;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+  }
+  #header img {
+  float: left;
+  background: #555;
+  width:80px;
+  height:80px;
+  
+  }
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: solid;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#62529c;
+}
+
+#left {
+    width: 40%;
+    height:48%;
+    float:left;
+    color:white;
+    text-align: center;
+    opacity: 0.9;
+     }
+
+#right {
+    width: 60%;
+    height: 60%;
+    float: right;
+    background-color:rgb(61, 57, 57);
+     }
+
+  .button {
+  background-color: #62529c;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  align-items: center;
+  
+}
+input[type=submit] {
+        background-color: #62529c;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+    input[type=text]{
+      width: 50%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  
+  display: inline-block;
+  border: 1px solid #ccc;
+  
+    }
+    input[type=email]{
+      width: 50%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  
+  display: inline-block;
+  border: 1px solid #ccc;
+  
+    }
+    input[type=date]{
+    width: 50%;
+    padding: 8px 10px;
+    border-radius: 4px;
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  
+    }
+  </style>
+</head>
+<body style="background-color:rgb(12, 12, 13)">
+<div id="header">
+    <img src= "./images/logo1-removebg-preview.jpg" alt="logo">
+    <h1>Preserving the Wild</h1>
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html#aboutus">About Us</a></li>
+        <li><a href="main.html#tablediv">News</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li style="float:right"><a class="active" href="main.html#contactus">Contact Us</a></li>
+      </ul></div>
+    <div id="left">
+        <h2>Donate Now</h2>
+        <h4> Fill in your details and we will reach out to you!</h4>
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+  <label for="emailid">Email ID:</label>
+  <input type="email" id="emailid" name="emailid" placeholder="Email Id"><br><br>
+  <label for="mobno">Phone No</label>
+  <input type="text" id="mobno" name="mobno" placeholder="Mobile no "><br><br>
+  <label for="frequency">Frequency of donation:</label>
+  <input type="radio" id="monthly" name="Donation_frequency" value="monthly">
+  <label for="monthly">Monthly</label>
+  <input type="radio" id="onetime" name="Donation_frequency" value="One time">
+  <label for="onetime">One time</label><br><br>
+  <label for="Contacttime">Give us the best time to contact you :</label>
+  <input type="date" id="Contacttime" name="Contacttime"><br><br><br><br>
+  <input type="submit" value="Submit" onclick="alert('Thank you for your response! We will get back to you back.')">
+
+</form>
+<br>
+<br>
+  </div>
+      <div id="right" >
+        <img src= "./images/createdgif.gif" alt="image" width="100%"; height="200%"; >  
+    
+      
+</div>
+</body>
+</html>
