@@ -1,0 +1,499 @@
+html,
+body {
+  height: 130%;
+  background-color: black;
+}
+
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+header {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+  background: black;
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+}
+header li{
+  display:inline;
+}
+
+@media only screen and (max-width : 768px) {
+  header {
+    display: inline-block;
+    
+  
+  }
+}
+
+.active {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  padding: 1% 2%;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+#intro {
+  background-color:#1e325c;
+  width: 100%;
+  display: flex;
+}
+
+#coverpage {
+  width: 75%;
+  display: inline-block;
+  margin: auto;  
+  max-height: 100%;
+  
+}
+
+#coverpage img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#rightintro {
+  width: 75%;
+  display: inline-block;
+
+  background: linear-gradient(-225deg, #152b57 30%, #2c4f88 60%, #4456b0 100%);
+  animation: fadeintext ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  color: white;
+  padding-left: 1%;
+  font-family: 'Lucida Sans', sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: x-large;
+}
+
+@keyframes fadeintext {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#rightintro p {
+  font-size: medium;
+
+}
+
+#about {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    display: block;
+    width: 100%;
+
+  }
+}
+
+#abtleft {
+  width: 30%;
+  display: inline-block;
+
+}
+
+#abtcenter {
+  width: 45%;
+  display: inline-block;
+
+}
+
+#abtright {
+  width: 25%;
+  display: inline-block;
+
+}
+
+#skills {
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+  width: 100%;
+  background-color: rgb(42, 67, 134);
+  display: flex;
+}
+
+
+
+#picskill {
+  width: 44%;
+  /* float: right; */
+  display: inline-block;
+  overflow:hidden;
+  margin: auto;  
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.skillsheading {
+  color: white;
+  font-family: 'Lucida Sans', sans-serif;
+
+  font-size: x-large;
+  text-align: center;
+  font-style: italic;
+
+}
+
+#parenttiles {
+  width: 54%;
+  background-color: rgb(42, 67, 134);
+  float: left;
+}
+
+
+.tiles {
+  width: 100px;
+  padding: 3px;
+  margin: 10px;
+  height: 100px;
+  float: left;
+  border-radius: 30%;
+
+
+}
+
+
+
+.skill-1 {
+  align-content: center;
+  background: url('/image/html.png');
+  background-size: cover;
+}
+
+
+.skill-2 {
+  align-content: center;
+  background: url('/image/css.png');
+  background-size: cover;
+}
+
+.skill-3 {
+  background: url('/image/hadoop.jpg');
+  background-size: cover;
+
+}
+
+.skill-4 {
+  background: url('/image/hive.jpg');
+  background-size: cover;
+}
+
+.skill-5 {
+  background: url('/image/hue.png');
+  background-size: cover;
+}
+
+.skill-6 {
+  background: url('/image/streamsets.png');
+  background-size: cover;
+}
+
+.skill-7 {
+  background: url('/image/sqoop.jpg');
+  background-size: cover;
+}
+
+.skill-8 {
+  background: url('/image/spark.png');
+  background-size: cover;
+}
+
+.skill-9 {
+  background: url('/image/python.png');
+  background-size: cover;
+}
+
+.skill-10 {
+  background: url('/image/git.jpg');
+  background-size: cover;
+}
+
+#experience {
+  /* background-color: rgb(53, 4, 63); */
+  width: 100%;
+  background-image: url("/image/blue2.jpeg");
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: Helvetica, sans-serif;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container:hover {
+  background-color: rgb(42, 67, 134);
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #dc0a57;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right {
+  left: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  border-radius: 6px;
+  background-color: white;
+  position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  
+  .timeline::after {
+    left: 31px;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+
+  .right {
+    left: 0%;
+  }
+}
+
+#project {
+  background-color: #1e325c;
+  color: white;
+}
+
+div.gallery {
+  border: 1px solid rgb(187, 6, 6);
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 49.99999%;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desc {
+  color: white;
+}
+
+#tablecont {
+  background-color: white;
+  width: 100%;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+
+}
+
+table {
+  width: 80%;
+  float: left;
+  border-collapse: collapse;
+  display:flex;
+}
+
+.tablepic {
+  float: right;
+  width: 40%;
+  align-content: center;
+  margin: auto;  
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  
+}
+
+tr:hover {
+  background-color: rgb(231, 101, 69);
+}
+
+#end {
+  background-color: rgb(30, 64, 159);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-left: 100px;
+}
+
+#tablecont h2 {
+  text-align: center;
+}
+
+
+
