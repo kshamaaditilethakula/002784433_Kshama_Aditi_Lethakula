@@ -6,6 +6,11 @@ About:
 
 This website's "Portfolio" is an online showcase of the projects, abilities, and experiences I've gained thus far, as well as the work I've produced.
 #---------------------------------------------------------------------------------------------------------------------------------------
+Creativity factor: 
+
+I have incorporated Slidein left, Slidein right, and fading of the components once the website has loaded in order to make this website engaging and aesthetically appealing. For the sake of making the webpage more engaging for the readers, I have also added hover effects to each component.
+Technologies Used:
+#---------------------------------------------------------------------------------------------------------------------------------------
 Technologies Used:
 
 * HTML / HTML5
@@ -34,7 +39,7 @@ Tags used for the development of the website:
 
 <img src="xx" alt=""> - Add the image to the HTML webpage and src is the location from which the image is located with alt being the alternate name of the image.
 
-<h1> to <h6>- Heading 1 is most significant header with h6 being least and h1 is largest in font size.Used to highlight the title of my webpage Epic Captures in website.
+<h1> to <h6>- Heading 1 is most significant header with h6 being least and h1 is largest in font size.Used to highlight the title of my page.
 
 
 <p></p> - paragraph tag to write the content of the webpage like about us and introductory section .
