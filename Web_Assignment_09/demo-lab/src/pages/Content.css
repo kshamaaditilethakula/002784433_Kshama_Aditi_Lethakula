@@ -1,0 +1,13 @@
+#card{
+    width:25%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: rgb(43, 79, 116);
+    color: rgb(225, 220, 220);
+    padding: 5px;
+    text-align: center;
+    display: flex;
+}
